@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F5E1DA; 
+            color: #4C2C69; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px;
+            background-color: #FFFFFF; 
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        header {
+            background-image: linear-gradient(to right, #FFDE59, #FF66C4);
+            color: #fff;
+            padding: 20px 50px;
+            border-radius: 10px 10px 0 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .content {
+            display: flex;
+            width: 100%;
+        }
+
+        .left-panel {
+            flex: 1;
+            padding: 20px;
+        }
+        img{
+            transition: transform 1s;
+        }
+
+        img:hover{
+            transform: rotate(360deg);
+        }
+
+        .right-panel {
+            flex: 1;
+            padding: 40px;
+            background-image: linear-gradient(to top left, #FFDE59, #FF66C4);
+            color: #fff;
+            border-radius: 0 0 10px 10px;
+            text-align: left;
+        }
+
+        .projects {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .project-item {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #F76C6C; 
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            border-radius: 0 0 10px 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>E-Portfolio</h1>
+        </header>
+
+        <div class="content">
+            <div class="left-panel">
+                <img src="assets/portrait.png" alt="Profile Image" style="width: 300px;">
+            </div>
+            <div class="right-panel">
+                <h2>About Me</h2>
+                <p>Somethings about me.</p>
+
+                <h2 class="projects">Projects</h2>
+                <div class="project-item">
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
